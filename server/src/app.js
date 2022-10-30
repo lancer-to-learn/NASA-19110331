@@ -10,6 +10,7 @@ const morgan = require('morgan')
 const app = express()
 
 app.use(express.json())
+app.use(express.static(path.join(__dirname, '..', 'public')))
 app.use(morgan('combined'))
 app.use(cors({
     origin: "http://localhost:3000",
