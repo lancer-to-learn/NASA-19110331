@@ -10,9 +10,16 @@
     "client": "npm start --prefix client",
     "watch": "concurrently \"npm run client\" \"npm run server\"",
     "deploy": "npm run build --prefix client & npm start --prefix server",
-    "test": "npm run test --prefix server & npm run test --prefix client"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  },
+  "dependencies": {
+    "mocha": "^10.1.0",
+    "supertest": "^6.3.1"
+  }
 }
