@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "watch": "nodemon run src/server.js",
-    "test": "mocha"
+    "test": ""
   },
   "keywords": [],
   "author": "",
